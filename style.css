@@ -791,3 +791,7 @@ a.action-item:hover {
     transition-duration: .01ms !important;
   }
 }
+.paypal-logo {
+  width: 2em;
+  height: 2em;
+}
