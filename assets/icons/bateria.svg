@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Batería</title>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M14 15V8h10v7M40 15V8h10v7M6 15h52v39H6z"/>
+    <path d="M19 28v14M12 35h14M45 28v14M38 35h14"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Lista de verificación</title>
+  <g fill="none" stroke="#f5f5f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <path d="M47 27H23a7 7 0 0 0-7 7v84h96V34a7 7 0 0 0-7-7H81"/>
+    <path d="M47 27v-7h8a9 9 0 0 1 18 0h8v14H47V27Z"/>
+    <path d="m39 57 8 8 13-16M70 57h25"/>
+    <path d="m39 79 8 8 13-16M70 79h25"/>
+    <path d="m39 101 8 8 13-16M70 101h25"/>
+  </g>
+</svg>

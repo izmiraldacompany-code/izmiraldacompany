@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 421 211" role="img" aria-labelledby="title">
+  <title id="title">Línea curva luminosa</title>
+  <defs>
+    <filter id="cyanGlow" x="-20%" y="-60%" width="140%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="pointGlow" x="-300%" y="-300%" width="700%" height="700%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M-12 13C48 94 132 143 230 164c61 13 121 16 203 16" fill="none" stroke="#00c9f5" stroke-linecap="round" stroke-width="3" filter="url(#cyanGlow)"/>
+  <path d="M-12 13C48 94 132 143 230 164c61 13 121 16 203 16" fill="none" stroke="#49dfff" stroke-linecap="round" stroke-width="1.5"/>
+  <circle cx="184" cy="153" r="2.5" fill="#d9fbff" filter="url(#pointGlow)"/>
+</svg>

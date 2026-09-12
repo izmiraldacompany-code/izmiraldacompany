@@ -1,0 +1,2 @@
+/* Separador de marca compartido. Bootstrap gestiona alineación y espaciados. */
+.title-rule { display:inline-block; width:3.5rem; height:.2rem; margin-top:1.25rem; border-radius:999px; background:#fcc41a; }

@@ -1,0 +1,41 @@
+/* Página Misión y Visión: Bootstrap resuelve la estructura; aquí vive la identidad visual. */
+.vision-hero {
+  min-height: 48rem;
+  padding: 9rem 0 5rem;
+  background: linear-gradient(135deg, #fbf8fc 0%, #f3eef8 55%, #fbe9f0 100%);
+}
+.vision-hero::before,
+.vision-hero::after { position:absolute; content:""; border-radius:50%; pointer-events:none; }
+.vision-hero::before { width:22rem; height:22rem; top:5rem; right:-7rem; border:4rem solid rgba(252,196,26,.24); }
+.vision-hero::after { width:13rem; height:13rem; bottom:-5rem; left:-4rem; background:rgba(205,54,107,.1); }
+.vision-intro { max-width:47rem; font-size:1.15rem; }
+.vision-photo-frame { height:36rem; border:.75rem solid rgba(255,255,255,.8); border-radius:2rem; box-shadow:0 1.5rem 4rem rgba(50,22,79,.18); }
+.vision-photo-frame img { border-radius:1.3rem; }
+.vision-photo-note { right:-1.5rem; bottom:2rem; max-width:15rem; padding:1rem 1.2rem; }
+.purpose-card { min-height:31rem; }
+.purpose-card-mission { background:linear-gradient(145deg,#32164f,#5f2671); }
+.purpose-card-vision { background:linear-gradient(145deg,#81256f,#cd366b); }
+.purpose-card::after { position:absolute; width:18rem; height:18rem; right:-7rem; bottom:-8rem; content:""; border:2.5rem solid rgba(255,255,255,.08); border-radius:50%; }
+.purpose-icon { width:4rem; height:4rem; color:var(--iz-yellow); background:rgba(255,255,255,.12); }
+.purpose-number { position:absolute; top:1.25rem; right:1.75rem; color:rgba(255,255,255,.09); font-size:6rem; font-weight:800; line-height:1; }
+.purpose-copy { position:relative; z-index:1; font-size:1.08rem; line-height:1.8; }
+.vision-fields { background:#f3eef8; }
+.field-card { border-top:.3rem solid var(--iz-yellow); box-shadow:0 .8rem 2.5rem rgba(50,22,79,.08); transition:transform .25s ease,box-shadow .25s ease; }
+.field-card:hover { transform:translateY(-.35rem); box-shadow:0 1.2rem 3rem rgba(50,22,79,.14); cursor:pointer; }
+.field-index { color:var(--iz-raspberry); font-size:.8rem; font-weight:800; letter-spacing:.12em; }
+.vision-img-tall { min-height:32rem; }
+.vision-img-small { height:calc(16rem - .5rem); }
+.vision-cta { background:linear-gradient(120deg,#241039,#51205f 58%,#81256f); }
+@media (max-width:991.98px) {
+  .vision-hero { min-height:auto; padding-top:8rem; }
+  .vision-photo-frame { height:30rem; }
+  .vision-photo-note { right:1rem; }
+  .purpose-card { min-height:auto; }
+}
+@media (max-width:575.98px) {
+  .vision-hero .display-3 { font-size:clamp(2.4rem,12vw,3.4rem); }
+  .vision-photo-frame { height:25rem; border-width:.5rem; }
+  .vision-photo-note { right:.75rem; bottom:.75rem; max-width:calc(100% - 1.5rem); }
+  .vision-img-tall { min-height:24rem; }
+  .vision-img-small { height:calc(12rem - .5rem); }
+}

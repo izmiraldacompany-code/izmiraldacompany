@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Mantenimiento</title>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M51 7c-6-2-12-1-16 3s-6 11-3 17L11 48a7 7 0 0 0 10 10l21-21c6 3 13 1 17-3 4-4 5-10 3-16L51 29l-9-2-2-9L51 7Z"/>
+    <circle cx="16" cy="53" r="1.8"/>
+  </g>
+</svg>

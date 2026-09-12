@@ -1,0 +1,39 @@
+/* Estilos exclusivos del menú compartido; estructura y adaptación con Bootstrap. */
+[data-company-menu] .site-navbar { padding-block:1rem; background:rgba(36,16,57,.88); backdrop-filter:blur(14px); box-shadow:0 .5rem 2rem rgba(15,7,25,.12); }
+[data-company-menu] .navbar-brand { color:#fff; font-size:1.15rem; letter-spacing:.1em; }
+[data-company-menu] .nav-link { font-size:1rem; text-transform:none; color:rgba(255,255,255,.86); font-weight:600; }
+[data-company-menu] .nav-link:hover, [data-company-menu] .nav-link.active { color:#ffc107; text-decoration:none; }
+[data-company-menu] .btn-warning { color:#241039; background:#ffc107; border-color:#ffc107; }
+[data-company-menu] .dropdown-menu { --bs-dropdown-bg:#241039; --bs-dropdown-link-color:rgba(255,255,255,.86); --bs-dropdown-link-hover-color:#ffc107; --bs-dropdown-link-hover-bg:rgba(255,255,255,.08); --bs-dropdown-link-active-color:#ffc107; --bs-dropdown-link-active-bg:rgba(255,255,255,.08); border-color:rgba(255,255,255,.15); }
+[data-company-menu] .dropdown-item { font-size:1rem; padding:.65rem 1rem; text-decoration:none; }
+[data-company-menu] .dropdown-menu.show { animation:company-menu-open .22s ease-out both; }
+[data-company-menu] .dropdown-toggle::after { transition:transform .22s ease-out; }
+[data-company-menu] .dropdown-toggle[aria-expanded="true"]::after { transform:rotate(180deg); }
+@keyframes company-menu-open {
+  from { opacity:0; translate:0 -8px; }
+  to { opacity:1; translate:0 0; }
+}
+@media (prefers-reduced-motion:reduce) {
+  [data-company-menu] .dropdown-menu.show { animation:none; }
+  [data-company-menu] .dropdown-toggle::after { transition:none; }
+}
+
+/* Evitar que la tipografía de cada landing altere las métricas del menú. */
+[data-company-menu] {
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+[data-company-menu] .nav-link { line-height:1.65; letter-spacing:normal; }
+[data-company-menu] .navbar-brand { line-height:1.65; }
+[data-company-menu] .btn { font-family:inherit; font-size:1rem; line-height:1.5; letter-spacing:normal; }
+
+@media (max-width:991.98px) {
+  [data-company-menu] .navbar-collapse {
+    box-sizing:border-box;
+    flex:0 0 auto;
+    width:100%;
+    max-width:100%;
+    margin-inline:auto;
+  }
+}

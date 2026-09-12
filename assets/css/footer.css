@@ -1,0 +1,14 @@
+/* Aislar el footer de las tipografías y colores de cada página. */
+[data-company-footer] { scroll-margin-top:6rem; }
+[data-company-footer].site-footer { background:#241039; color:#fff; font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; font-size:1rem; line-height:1.65; }
+[data-company-footer] .letter-spacing { letter-spacing:.1em; }
+[data-company-footer].site-footer a { color:rgba(255,255,255,.86); text-decoration:none; font-weight:400; overflow-wrap:anywhere; }
+[data-company-footer].site-footer a:hover { color:#fcc41a; }
+[data-company-footer].site-footer p { font-size:.875rem; }
+[data-company-footer] .footer-contact-text { color:rgba(255,255,255,.65); font-size:.8rem; }
+[data-company-footer] .footer-contact-text { max-width:38rem; }
+[data-company-footer] .footer-contact-label { color:rgba(255,255,255,.55); font-size:.75rem;  }
+[data-company-footer] .footer-bottom p { color:rgba(255,255,255,.65); font-size:.75rem; }
+
+[data-company-footer] .footer-partner-logo { width:clamp(10rem,1vw,15rem); height:4.5rem; object-fit:cover; object-position:center 54%; }
+@media (max-width:767.98px) { [data-company-footer] .footer-partner-logo { width:11rem; } }

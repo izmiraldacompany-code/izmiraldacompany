@@ -1,0 +1,8 @@
+/* Cursor común para controles y elementos con efectos hover. */
+:is(a[href], button, [role="button"], summary, select, input[type="button"],
+    input[type="submit"], input[type="reset"], input[type="checkbox"],
+    input[type="radio"], input[type="range"], label[for], [data-bs-toggle],
+    .btn, .gallery-card, .media-card, .innovation-card, .video-play-cover,
+    .media-video-cover, #video-cover):not(:disabled):not([aria-disabled="true"]):not(.disabled):hover {
+  cursor: pointer;
+}

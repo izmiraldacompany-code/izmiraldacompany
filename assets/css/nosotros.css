@@ -1,0 +1,27 @@
+.about-page { background:#fff; }
+.about-hero { min-height:44rem; padding-top:6.5rem; background:radial-gradient(circle at 12% 25%,rgba(205,54,107,.1),transparent 24rem),radial-gradient(circle at 85% 18%,rgba(252,196,26,.13),transparent 19rem),var(--iz-lavender); }
+.about-hero-copy { max-width:39rem; font-size:1.15rem; }
+.about-hero-media::before { position:absolute; z-index:0; inset:-1rem 1rem 1rem -1rem; border:1px solid rgba(129,37,111,.16); border-radius:1.5rem; content:""; }
+.about-hero-media .ratio { position:relative; z-index:1; }
+.about-hero-caption { z-index:2; right:-1rem; bottom:-2rem; max-width:20rem; background:rgba(255,255,255,.95); backdrop-filter:blur(12px); }
+.team-section,.about-cta { background:#fff; }
+.team-card { border-radius:1.5rem; background:#fff; box-shadow:0 1rem 2.6rem rgba(50,22,79,.11); transition:transform .25s ease,box-shadow .25s ease; }
+.team-card:hover { transform:translateY(-.45rem); box-shadow:0 1.4rem 3.2rem rgba(50,22,79,.17); cursor:pointer; }
+.team-photo-wrap { background:#edf3f8; }
+.team-photo-wrap img { display:block; object-position:center top; transition:transform .45s ease; }
+.team-card:hover .team-photo-wrap img { transform:scale(1.035); }
+.team-role { background:rgba(205,54,107,.1); color:var(--iz-raspberry); font-size:.78rem; font-weight:800; letter-spacing:.03em; }
+.expertise-section { background:var(--iz-lavender); }
+.expertise-quote { padding-left:1.25rem; border-left:.25rem solid var(--iz-yellow); color:var(--iz-plum); font-size:1.2rem; font-weight:650; }
+.expertise-card { border:1px solid rgba(80,58,95,.1); background:rgba(255,255,255,.78); box-shadow:0 .7rem 1.8rem rgba(50,22,79,.06); }
+.expertise-number { color:var(--iz-raspberry); font-size:.8rem; font-weight:850; letter-spacing:.12em; }
+.recognition-section { background:#faf8fb; }
+.recognition-card { box-shadow:0 1.2rem 3rem rgba(36,16,57,.16); }
+.recognition-card-featured { background:linear-gradient(135deg,var(--iz-purple-950),var(--iz-plum)); }
+.recognition-card-startup { background:linear-gradient(145deg,#81256f,#32164f 75%); }
+.recognition-year { border-bottom:.2rem solid var(--iz-yellow); color:var(--iz-yellow); font-size:.78rem; font-weight:850; letter-spacing:.12em; text-transform:uppercase; }
+.recognition-logo { min-height:10rem; background:rgba(255,255,255,.1); }
+.recognition-logo img { width:min(100%,18rem); height:7rem; object-fit:cover; object-position:center 54%; }
+.about-cta { border-top:1px solid rgba(80,58,95,.08); }
+@media (max-width:991.98px) { .about-hero { min-height:auto; padding-top:5rem; } .about-hero-caption { right:1rem; } }
+@media (max-width:575.98px) { .about-hero .display-3 { font-size:clamp(2.35rem,12vw,3.3rem); } .about-hero-media::before { display:none; } .about-hero-caption { position:relative !important; right:auto; bottom:auto; max-width:none; margin:-1.5rem 1rem 0; } }
