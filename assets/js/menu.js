@@ -16,7 +16,9 @@
   }[currentPage];
   host.innerHTML = `<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark  site-navbar" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand fw-bold letter-spacing" href="${home}#inicio" aria-label="Izmiralda, volver al inicio">IZMIRALDA COMPANY</a>
+      <a class="navbar-brand fw-bold letter-spacing" href="${home}#inicio" aria-label="Izmiralda, volver al inicio">
+        <img src="./assets/images/logo_IZMIRALDA.png" alt="Logo de Izmiralda Company" class="logo_izmiralda">
+      </a>
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavigation" aria-controls="primaryNavigation" aria-expanded="false" aria-label="Abrir navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
