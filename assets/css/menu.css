@@ -89,6 +89,17 @@
   letter-spacing: normal;
 }
 
+@media (min-width: 992px) {
+  [data-company-menu] .navbar-nav > .nav-item > .nav-link,
+  [data-company-menu] .navbar-nav > .nav-item > .btn {
+    display: flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 991.98px) {
   [data-company-menu] .navbar-collapse {
     box-sizing: border-box;
@@ -99,6 +110,6 @@
   }
 }
 .logo_izmiralda {
-  max-width: 230px;
+  max-width: 200px;
   height: auto;
 }
