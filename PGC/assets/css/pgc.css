@@ -10,7 +10,11 @@ body { background: var(--iz-ivory); }
 
 .pgc-hero { min-height: 46rem; padding-top: 5rem; background: var(--iz-purple-950); }
 .pgc-hero__image { z-index: 0; object-position: 70% 18%; }
-.pgc-hero__overlay { z-index: 1; background: linear-gradient(90deg, rgba(36,16,57,.97) 0%, rgba(50,22,79,.86) 39%, rgba(36,16,57,.12) 76%), linear-gradient(0deg, rgba(36,16,57,.44), transparent 45%); }
+.pgc-hero__overlay {
+  --pgc-hero-gradient-angle: 90deg;
+  z-index: 1;
+  background: linear-gradient(var(--pgc-hero-gradient-angle), rgba(36,16,57,.97) 0%, rgba(50,22,79,.86) 39%, rgba(36,16,57,.12) 76%), linear-gradient(0deg, rgba(36,16,57,.44), transparent 45%);
+}
 .pgc-hero .container { z-index: 2; }
 .pgc-hero h1 { max-width: 12ch; text-wrap: balance; }
 .pgc-hero__lead { max-width: 38rem; font-size: clamp(1.08rem, 1.8vw, 1.3rem); line-height: 1.6; }
@@ -44,7 +48,12 @@ body { background: var(--iz-ivory); }
 }
 .video-card { container-type: inline-size; background: #10071b; }
 .video-card video { background: #000; }
-.video-cover { z-index: 2; color: #fff; background: linear-gradient(90deg, rgba(36,16,57,.94), rgba(50,22,79,.78) 38%, rgba(50,22,79,.35) 70%, rgba(36,16,57,.04)); }
+.video-cover {
+  --pgc-video-gradient-angle: 90deg;
+  z-index: 2;
+  color: #fff;
+  background: linear-gradient(var(--pgc-video-gradient-angle), rgba(36,16,57,.94), rgba(50,22,79,.78) 38%, rgba(50,22,79,.35) 70%, rgba(36,16,57,.04));
+}
 .video-cover-eyebrow { color: var(--iz-yellow); font-size: clamp(8px, 1.15cqw, 15px); font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
 .video-cover-title { font-size: clamp(18px, 4.9cqw, 64px); line-height: 1.05; }
 .video-cover-description { color: #f0eaf6; font-size: clamp(10px, 1.4cqw, 18px); line-height: 1.55; }
@@ -63,7 +72,7 @@ body { background: var(--iz-ivory); }
 
 @media (max-width: 991.98px) {
   .pgc-hero { min-height: 44rem; }
-  .pgc-hero__overlay { background: linear-gradient(90deg, rgba(36,16,57,.94), rgba(50,22,79,.54)), linear-gradient(0deg, rgba(36,16,57,.5), transparent 55%); }
+  .pgc-hero__overlay { background: linear-gradient(var(--pgc-hero-gradient-angle), rgba(36,16,57,.94), rgba(50,22,79,.54)), linear-gradient(0deg, rgba(36,16,57,.5), transparent 55%); }
   .purpose-image { height: 520px; }
   .device-image { height: 520px; }
   .closing-card img { min-height: 420px; max-height: 520px; }

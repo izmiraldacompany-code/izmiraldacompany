@@ -17,6 +17,18 @@ html[dir="rtl"] body { text-align: right; }
 html[dir="rtl"] .title-rule { margin-inline: 0 auto; }
 html[dir="rtl"] .text-center .title-rule { margin-inline: auto; }
 html[dir="rtl"] .footer-contact-layout { text-align: right !important; }
+html[dir="rtl"] .hero-section { --hero-gradient-angle: 270deg; }
+html[dir="rtl"] .pgc-hero__overlay { --pgc-hero-gradient-angle: 270deg; }
+html[dir="rtl"] .video-cover {
+  --pgc-video-gradient-angle: 270deg;
+  --pge-video-gradient-angle: 270deg;
+}
+html[dir="rtl"] .pge-hero__overlay { --pge-hero-gradient-angle: 270deg; }
+html[dir="rtl"] .pge-hero__image { transform: scaleX(-1); }
+html[dir="rtl"] .circular-hero__veil { --circular-hero-gradient-angle: 270deg; }
+html[dir="rtl"] .closing-card__overlay {
+  background: linear-gradient(270deg, rgba(36, 16, 57, .22), rgba(36, 16, 57, .96) 57%);
+}
 
 @media (max-width: 991.98px) {
   .language-selector { width: 100%; }

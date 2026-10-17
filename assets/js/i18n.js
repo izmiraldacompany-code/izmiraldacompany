@@ -10,7 +10,7 @@
   const browser = (navigator.language || 'es').slice(0, 2).toLowerCase();
   const language = supported.includes(requested) ? requested :
     supported.includes(saved) ? saved : supported.includes(browser) ? browser : 'es';
-  const translatableAttributes = ['alt', 'aria-label', 'title', 'placeholder'];
+  const translatableAttributes = ['alt', 'aria-label', 'title', 'placeholder', 'data-caption'];
   let dictionary = {};
 
   const normalize = value => value.replace(/\s+/g, ' ').trim();
@@ -34,6 +34,9 @@
 
   function translateElement(element) {
     if (element.matches?.('a')) preserveLanguageInLink(element);
+    if (language === 'ar' && element.matches?.('[data-src-ar]')) {
+      element.setAttribute('src', element.dataset.srcAr);
+    }
     translatableAttributes.forEach(attribute => {
       if (!element.hasAttribute(attribute)) return;
       const source = element.getAttribute(attribute);
@@ -75,7 +78,7 @@
 
   async function initialize() {
     try {
-      const response = await fetch(sourceUrl);
+      const response = await fetch(sourceUrl, {cache: 'no-store'});
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       dictionary = data.translations?.[language] || {};

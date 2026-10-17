@@ -110,9 +110,9 @@ button,
 }
 
 .hero-section {
-  
+  --hero-gradient-angle: 90deg;
   min-height: 46rem;
-  background-image: linear-gradient(90deg, rgba(36, 16, 57, .98) 0%, rgba(50, 22, 79, .88) 37%, rgba(50, 22, 79, .08) 72%), url("../images/banner-izmiralda.webp");
+  background-image: linear-gradient(var(--hero-gradient-angle), rgba(36, 16, 57, .98) 0%, rgba(50, 22, 79, .88) 37%, rgba(50, 22, 79, .08) 72%), url("../images/banner-izmiralda.webp");
   background-position: center, center;
   background-size: cover;
 }
@@ -644,7 +644,7 @@ a.action-item:hover {
 
   .hero-section {
     min-height: 44rem;
-    background-image: linear-gradient(90deg, rgba(36, 16, 57, .96), rgba(50, 22, 79, .56)), url("../images/enas-hero.png");
+    background-image: linear-gradient(var(--hero-gradient-angle), rgba(36, 16, 57, .96), rgba(50, 22, 79, .56)), url("../images/enas-hero.png");
     background-position: center, 62% center;
   }
 

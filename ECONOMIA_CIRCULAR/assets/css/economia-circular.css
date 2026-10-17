@@ -14,8 +14,9 @@ body { background: var(--iz-ivory); }
 .circular-hero { min-height: 780px; padding-top: 5rem; background: var(--iz-purple-950); }
 .circular-hero__image { z-index: 0; object-position: center 5%; }
 .circular-hero__veil {
+  --circular-hero-gradient-angle: 90deg;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(26, 10, 42, .94) 0%, rgba(50, 22, 79, .80) 42%, rgba(36, 16, 57, .22) 75%), linear-gradient(0deg, rgba(24, 8, 38, .7) 0%, transparent 52%);
+  background: linear-gradient(var(--circular-hero-gradient-angle), rgba(26, 10, 42, .94) 0%, rgba(50, 22, 79, .80) 42%, rgba(36, 16, 57, .22) 75%), linear-gradient(0deg, rgba(24, 8, 38, .7) 0%, transparent 52%);
 }
 .circular-hero .container { z-index: 2; }
 .circular-hero h1 { max-width: 18ch; text-wrap: balance; }
@@ -92,7 +93,7 @@ body { background: var(--iz-ivory); }
 
 @media (max-width: 991.98px) {
   .circular-hero { min-height: 720px; }
-  .circular-hero__veil { background: linear-gradient(90deg, rgba(26,10,42,.92), rgba(50,22,79,.56)), linear-gradient(0deg, rgba(24,8,38,.75), transparent 65%); }
+  .circular-hero__veil { background: linear-gradient(var(--circular-hero-gradient-angle), rgba(26,10,42,.92), rgba(50,22,79,.56)), linear-gradient(0deg, rgba(24,8,38,.75), transparent 65%); }
   .purpose-photo--main { min-height: 540px; }
   .purpose-photo--small { height: 262px; }
   .first-project__image { height: 500px; }
