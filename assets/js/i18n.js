@@ -34,9 +34,8 @@
 
   function translateElement(element) {
     if (element.matches?.('a')) preserveLanguageInLink(element);
-    if (language === 'ar' && element.matches?.('[data-src-ar]')) {
-      element.setAttribute('src', element.dataset.srcAr);
-    }
+    const localizedSource = element.getAttribute?.(`data-src-${language}`);
+    if (localizedSource) element.setAttribute('src', localizedSource);
     translatableAttributes.forEach(attribute => {
       if (!element.hasAttribute(attribute)) return;
       const source = element.getAttribute(attribute);
